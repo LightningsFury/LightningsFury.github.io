@@ -1,0 +1,453 @@
+<html>
+	<head>
+<!--
+Code and graphics copyright LightningsFury, 2015-2016
+Feel free to alter this code to your liking, but please do not re-host it, do not profit from it and do not present it as your own.
+
+-TODO :
+	-Punch Mario in the face
+	-Hall of fame
+	-Art gallery
+	-forums
+Please do not copy this code or put it in a USB to wave in my face.
+Also by copying this you agree that this is my awesome work and not yours, OK? 
+Terms of Service ("Terms")
+Last updated: January 30, 2016
+
+Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the fury.ideahq.org website (the "Service") operated by LightningsFury.
+
+Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+
+
+Links To Other Web Sites
+
+My Service may contain links to third-party web sites or services that are not owned or controlled by Lightnings Website.
+
+Lightnings Website has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Lightnings Website shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
+
+Termination
+
+We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+
+All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+
+Governing Law
+
+These Terms shall be governed and construed in accordance with the laws of United Kingdom, without regard to its conflict of law provisions.
+
+My failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.
+
+Changes
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+
+By continuing to access or use my Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
+
+Contact Us
+
+If you have any questions about these Terms, please contact us.
+-->
+
+
+	<title> Lightning's Website! </title>
+	<link rel="stylesheet"type="text/css"href="whatever.css"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<meta name="description" content="Jackpot! The offical website of the legend, the one and only... LightningsFury! This is a casual, family friendly website, due to coding being my hobby. So click the link and join the fun!" />
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<!-- This Script is from www.htmlfreecodes.com, Provided by: Mahmood Bina -->
+	<style type ="text/css">
+	.drama {
+		background-color: green;
+	}
+</style>
+
+<style type="text/css"><!--
+/*Do not Alter these. Set for alignment*/
+.css1{
+position:absolute;top:0px;left:0px;
+width:16px;height:16px;
+font-family:Arial,sans-serif;
+font-size:16px;
+text-align:center;
+font-weight:bold;
+}
+.css2{
+position:absolute;top:0px;left:0px;
+width:10px;height:10px;
+font-family:Arial,sans-serif;
+font-size:10px;
+text-align:center;
+}
+//-->
+</style>
+
+
+
+
+
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Mouse Follow Clock 3 from Rainbow Arch -->
+<!-- This script and many more from : -->
+<!-- http://rainbow.arch.scriptmania.com -->
+
+<!-- Mouse Follow Clock 3 from http://rainbow.arch.scriptmania.com
+//Hide from older browsers
+if (document.getElementById&&!document.layers){
+
+//Clock colours
+dCol='#f20e3e';//date colour.
+fCol='#232222';//face colour.
+sCol='#099609';//seconds colour.
+mCol='#099609';//minutes colour.
+hCol='#099609';//hours colour.
+
+//Controls
+del=0.6;  //Follow mouse speed.
+ref=40;   //Run speed (timeout).
+
+//Alter nothing below! Alignments will be lost!
+var ieType=(typeof window.innerWidth != 'number');
+var docComp=(document.compatMode);
+var docMod=(docComp && docComp.indexOf("CSS") != -1);
+var ieRef=(ieType && docMod)
+?document.documentElement:document.body;
+theDays=new Array("SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY");
+theMonths=new Array("JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","OCTOBER","NOVEMBER","DECEMBER");
+date=new Date();
+day=date.getDate();
+year=date.getYear();
+if (year < 2000) year=year+1900;
+tmpdate=" "+theDays[date.getDay()]+" "+day+" "+theMonths[date.getMonth()]+" "+year;
+D=tmpdate.split("");
+N='3 4 5 6 7 8 9 10 11 12 1 2';
+N=N.split(" ");
+F=N.length;
+H='...';
+H=H.split("");
+M='....';
+M=M.split("");
+S='.....';
+S=S.split("");
+siz=40;
+eqf=360/F;
+eqd=360/D.length;
+han=siz/5.5;
+ofy=-7;
+ofx=-3;
+ofst=70;
+tmr=null;
+vis=true;
+mouseY=0;
+mouseX=0;
+dy=new Array();
+dx=new Array();
+zy=new Array();
+zx=new Array();
+tmps=new Array();
+tmpm=new Array();
+tmph=new Array();
+tmpf=new Array();
+tmpd=new Array();
+var sum=parseInt(D.length+F+H.length+M.length+S.length)+1;
+for (i=0; i < sum; i++){
+dy[i]=0;
+dx[i]=0;
+zy[i]=0;
+zx[i]=0;
+}
+
+algn=new Array();
+for (i=0; i < D.length; i++){
+algn[i]=(parseInt(D[i]) || D[i]==0)?10:9;
+document.write('<div id="_date'+i+'" class="css2" style="font-size:'+algn[i]+'px;color:'+dCol+'">'+D[i]+'<\/div>');
+tmpd[i]=document.getElementById("_date"+i).style;
+}
+for (i=0; i < F; i++){
+document.write('<div id="_face'+i+'" class="css2" style="color:'+fCol+'">'+N[i]+'<\/div>');
+tmpf[i]=document.getElementById("_face"+i).style;
+}
+for (i=0; i < H.length; i++){
+document.write('<div id="_hours'+i+'" class="css1" style="color:'+hCol+'">'+H[i]+'<\/div>');
+tmph[i]=document.getElementById("_hours"+i).style;
+}
+for (i=0; i < M.length; i++){
+document.write('<div id="_minutes'+i+'" class="css1" style="color:'+mCol+'">'+M[i]+'<\/div>');
+tmpm[i]=document.getElementById("_minutes"+i).style;
+}
+for (i=0; i < S.length; i++){
+document.write('<div id="_seconds'+i+'" class="css1" style="color:'+sCol+'">'+S[i]+'<\/div>');
+tmps[i]=document.getElementById("_seconds"+i).style;
+}
+
+function onoff(){
+if (vis){
+ vis=false;
+ document.getElementById("control").value="Clock On";
+ }
+else{
+ vis=true;
+ document.getElementById("control").value="Clock Off";
+ Delay();
+ }
+kill();
+}
+
+function kill(){
+if (vis)
+ document.onmousemove=mouse;
+else
+ document.onmousemove=null;
+}
+
+function mouse(e){
+var msy = (!ieType)?window.pageYOffset:0;
+if (!e) e = window.event;
+ if (typeof e.pageY == 'number'){
+  mouseY = e.pageY + ofst - msy;
+  mouseX = e.pageX + ofst;
+ }
+ else{
+  mouseY = e.clientY + ofst - msy;
+  mouseX = e.clientX + ofst;
+ }
+if (!vis) kill();
+}
+document.onmousemove=mouse;
+
+function winDims(){
+winH=(ieType)?ieRef.clientHeight:window.innerHeight;
+winW=(ieType)?ieRef.clientWidth:window.innerWidth;
+}
+winDims();
+window.onresize=new Function("winDims()");
+
+function ClockAndAssign(){
+time = new Date();
+secs = time.getSeconds();
+sec = Math.PI * (secs-15) / 30;
+mins = time.getMinutes();
+min = Math.PI * (mins-15) / 30;
+hrs = time.getHours();
+hr = Math.PI * (hrs-3) / 6 + Math.PI * parseInt(time.getMinutes()) / 360;
+
+for (i=0; i < S.length; i++){
+ tmps[i].top=dy[D.length+F+H.length+M.length+i]+ofy+(i*han)*Math.sin(sec)+scrollY+"px";
+ tmps[i].left=dx[D.length+F+H.length+M.length+i]+ofx+(i*han)*Math.cos(sec)+"px";
+ }
+for (i=0; i < M.length; i++){
+ tmpm[i].top=dy[D.length+F+H.length+i]+ofy+(i*han)*Math.sin(min)+scrollY+"px";
+ tmpm[i].left=dx[D.length+F+H.length+i]+ofx+(i*han)*Math.cos(min)+"px";
+ }
+for (i=0; i < H.length; i++){
+ tmph[i].top=dy[D.length+F+i]+ofy+(i*han)*Math.sin(hr)+scrollY+"px";
+ tmph[i].left=dx[D.length+F+i]+ofx+(i*han)*Math.cos(hr)+"px";
+ }
+for (i=0; i < F; i++){
+ tmpf[i].top=dy[D.length+i]+siz*Math.sin(i*eqf*Math.PI/180)+scrollY+"px";
+ tmpf[i].left=dx[D.length+i]+siz*Math.cos(i*eqf*Math.PI/180)+"px";
+ }
+for (i=0; i < D.length; i++){
+ tmpd[i].top=dy[i]+siz*1.5*Math.sin(-sec+i*eqd*Math.PI/180)+scrollY+"px";
+ tmpd[i].left=dx[i]+siz*1.5*Math.cos(-sec+i*eqd*Math.PI/180)+"px";
+ }
+if (!vis)clearTimeout(tmr);
+}
+
+buffW=(ieType)?80:90;
+function Delay(){
+scrollY=(ieType)?ieRef.scrollTop:window.pageYOffset;
+if (!vis){
+ dy[0]=-100;
+ dx[0]=-100;
+}
+else{
+ zy[0]=Math.round(dy[0]+=((mouseY)-dy[0])*del);
+ zx[0]=Math.round(dx[0]+=((mouseX)-dx[0])*del);
+}
+for (i=1; i < sum; i++){
+ if (!vis){
+  dy[i]=-100;
+  dx[i]=-100;
+ }
+ else{
+  zy[i]=Math.round(dy[i]+=(zy[i-1]-dy[i])*del);
+  zx[i]=Math.round(dx[i]+=(zx[i-1]-dx[i])*del);
+ }
+if (dy[i-1] >= winH-80) dy[i-1]=winH-80;
+if (dx[i-1] >= winW-buffW) dx[i-1]=winW-buffW;
+}
+
+tmr=setTimeout('Delay()',ref);
+ClockAndAssign();
+}
+window.onload=Delay;
+}
+//-->
+</script>
+
+<body background="https://media1.giphy.com/media/8s1fzZRP6g9LW/200.gif">
+	<link rel="icon" type="image/png" href="http://www.faviconshut.com/pics/3/3830-icon-set-beautiful-weather-icons-author-custom-icon-design-license-favicon.png">
+	    <meta name="author" content="Lightnings Fury">
+    <meta property="og:title" content="Lightning's Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="www.lightningsfury.com" />
+    <meta property="og:site_name" content="Lightnings Website" />
+    <meta property="fb:app_id" content="498329290200182" /
+	</head>
+
+
+
+
+
+
+	<div class="container navbar">
+	<header>
+	<nav class="navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://helmet-heroes.com/">Helmet Heroes</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">IDEA guild <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+           <li><a href="http://ideahq.org/">IDEA H.Q</a></li>
+            <li><a href="http://ideahq.org/about.html">Guild members</a></li>
+            <li><a href="http://ideahq.org/contact.html">contact calvin</a></li>
+            <li class="divider"></li>
+            <li><a href="http://ideahq.org/phpchat/">Chat!</a></li>
+            <li class="divider"></li>
+            <li><a href="http://helmet-heroes.com/forum/viewtopic.php?f=8&t=15333">Forum Thread!</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://helmet-heroes.com/forum/memberlist.php?mode=viewprofile&u=5614">Forum PROfile</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Spoiler <span class="caret"></span></a>
+
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<p>                                                                            </p>
+<p>
+<ul class="nav nav-tabs ">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="chat.htm">Chat</a></li>
+  <li role="presentation"><a href="contactme.htm">Contact me!</a></li>
+  <li role="presentation"><a href="playhh.htm">Play HH here!</a></li>
+</ul>
+
+<p class="drama">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://i.imgur.com/jFqqYm6.jpg" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://i.imgur.com/q1TeNmJ.png" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+	 <div class="item">
+      <img src="http://i.imgur.com/DEqw9XQ.jpg" alt="...">
+      <div class="carousel-caption">
+    ...
+  </div>
+</div>
+
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	<ul>
+	<nav>
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="http://helmet-heroes.com/forum/viewforum.php?f=4">1</a></li>
+    <li><a href="http://helmet-heroes.com/forum/viewforum.php?f=7">2</a></li>
+    <li><a href="http://helmet-heroes.com/forum/viewforum.php?f=10">3</a></li>
+    <li><a href="http://helmet-heroes.com/forum/viewforum.php?f=6">4</a></li>
+    <li><a href="http://helmet-heroes.com/forum/viewforum.php?f=8">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+
+      </a>
+    </li>
+  </ul>
+</nav>
+<h1><div align="center"><b><font color="#5DFF73">Welcome to my website!</font></b></div></h1>
+<p><div align="left"><font size="2">Hey guys, Im LightningsFury or sometimes known as "LightsFury".
+I play many games, some include: <ul>
+<li><font color="#808000">Helmet Heroes</font></li>
+<li><font color="#75FF34"> Growtopia</font></li>
+<li><font color="#FF0000">Roblox </font></li>
+<li> <font color="#0080FF">Minecraft PE</font></li>
+	</ul>
+So rest your hand and enjoy the rest! </font></div></p>
+	<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="#">The comments</a> are loading...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24dFjaGhSAzZjKIE57k.hML."+"&opts=16862&num=10&ts=1453571969538");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+</p>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</body>
+</html>
